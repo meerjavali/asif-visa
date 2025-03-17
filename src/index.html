@@ -1,13 +1,173 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AsifUSVisas</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <title>Asif Visas Pvt LTD </title>
+        <!--Favicon-->
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+        <!--Google Font-->
+    
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <!--Bootstrap CSS-->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <!--Owl Carousel CSS-->
+       <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">-->
+        
+        <link rel="stylesheet" type="text/css" href="owl-carousel/owl.carousel.css">
+         <link rel="stylesheet" type="text/css" href="owl-carousel/owl.theme.css">
+         <link rel="stylesheet" type="text/css" href="owl-carousel/owl.transitions.css">
+        
+        <!--Slick CSS-->
+        <link rel="stylesheet" type="text/css" href="css/slick.css">
+        <!--Animation CSS-->
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <!--Font Awesome CSS-->
+        <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css">
+        <!--Main CSS-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--Responsive CSS-->
+        <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    </head>
 <body>
   <app-root></app-root>
 </body>
+<script src="js/templatemo-script.js"></script>
+		
+    
+<!--jQuery JS-->
+<script src="js/jquery-min.js"></script>
+<!--Custom Google Map JS-->
+<script src="js/map-scripts.js"></script>
+<!--WOW Js-->
+<script src="js/wow.js"></script> 
+<!--Slick Js-->
+<script src="js/slick.min.js"></script>
+<!--Counter JS-->
+<script src="js/waypoints.js"></script>
+<script src="js/counterup.min.js"></script>
+<!--Bootstrap JS-->
+<script src="js/bootstrap.min.js"></script>
+<!--Magnic PopUp JS-->
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<!--Owl Carousel JS-->
+<!-- <script src="js/owl.carousel.min.js"></script>-->
+<!--Jquery Easing Js -->
+<script src="js/jquery.easing.js"></script>
+
+<link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+
+<script src="js/sweetalert/sweetalert.min.js"></script>
+
+<!--Scrolly JS-->
+<script src="js/scrolly.js"></script>
+<!--Ajax Contact JS-->
+<script src="js/ajax-contact-form.js"></script>
+<!--Main JS-->
+<script src="js/custom.js"></script>
+
+<script src="owl-carousel/owl.carousel.js"></script>
+<script src="owl-carousel/owl.carousel.min.js"></script>
+
+<link rel="stylesheet" href="whatsapp/floating-wpp.css">
+<script type="text/javascript" src="whatsapp/floating-wpp.js"></script>
+
+<script type="text/javascript">
+
+  $(document).ready(function (){
+       
+    Scrolly.init( 
+          { 
+            "selector" : "scrolly",
+            "speed"    : 1000,
+
+          } 
+        ); 
+  
+    $("#banner").owlCarousel({
+
+  navigation : true, // Show next and prev buttons
+  slideSpeed : 300,
+  paginationSpeed : 400,
+autoPlay: true,
+dots: false,
+pagination: false,
+  singleItem:true
+
+  // "singleItem:true" is a shortcut for:
+  // items : 1, 
+  // itemsDesktop : false,
+  // itemsDesktopSmall : false,
+  // itemsTablet: false,
+  // itemsMobile : false
+
+});
+
+$("#sidebanner").owlCarousel({
+items: 3,
+itemsDesktop : [1000,2], // 2 items between 1000px and 901px
+itemsDesktopSmall : [900,2], // betweem 900px and 601px
+itemsTablet: [700,2], // 2 items between 600 and 480
+itemsMobile : [479,1] , // 1 item between 479 and 0
+navigation: false,
+lazyLoad: false,
+pagination: false,
+scrollPerPage : false,
+autoPlay: true,
+  // "singleItem:true" is a shortcut for:
+   //items : 2, 
+  //itemsDesktop : false,
+  //itemsDesktopSmall : true,
+  //itemsTablet: true,
+  //itemsMobile : true,
+
+});
+
+    });
+
+
+$('.btnSubmit').click(function(){
+
+    $name=$('#name').val();
+    $email=$('#email').val();
+    $subject=$('#subject').val();
+    $message=$('#message').val();
+    
+    //alert(customerType.join(", ")+":"+$name+":"+$email+":"+$subject+":"+$message+":"+$enquiryType);
+  if($name!="" && $email!="" && $subject!= "" && $message){
+    
+    swal({
+          title: "Processing",
+          text: "Please wait while we are processing your request....",
+          imageUrl: "images/ajax-loader.gif",
+          showConfirmButton: false
+    });
+    
+    $.post("ajax.php",{fullName:$name,email:$email,subject:$subject,message:$message},function(result){
+                
+          swal({title: "Success", text: result.message, type: "success"},
+                   function(){ 
+                    swal.close();
+                    $('#contactForm')[0].reset();
+                   }
+            );
+    });
+    }else{
+      alert('Please Enter Required Fields');
+      
+      }
+    
+});
+$(function () {
+    $('.floating-wpp').floatingWhatsApp({
+      showPopup: true
+    });
+});
+
+</script>
 </html>
