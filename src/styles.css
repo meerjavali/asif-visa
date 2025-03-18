@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import '../src/css/animate.css';
+@import '../src/css/bootstrap.css';
+@import '../src/css/style.css';
+@import '../src/css/responsive.css';
+@import '../src/css/slick.css';

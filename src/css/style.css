@@ -451,7 +451,7 @@ textarea {
     z-index: 9999999;
 }
 
-#preloader .spinner {;
+#preloader .spinner {
   margin: 300px auto;
   width: 50px;
   height: 40px;
@@ -657,7 +657,7 @@ height: 1.2em;
     color: #333;
 }
 .innerHeading {
-    background: url(../images/service_tbg.jpg) no-repeat center;
+    background: url(../../src/images/service_tbg.jpg) no-repeat center;
         background-size: auto;
     background-size: cover !important;
     color: #fff;
@@ -684,7 +684,7 @@ height: 1.2em;
 }
 
 .custHeading {
-    background: url(../images/Automated-Fare-Collection-afc.jpg) no-repeat center;
+    background: url(../../src/images/Automated-Fare-Collection-afc.jpg) no-repeat center;
     background-size: auto;
     background-size: cover !important;
     color: #fff;
@@ -731,7 +731,7 @@ height: 1.2em;
 
 
 .insuranceHeading {
-    background: url(../images/insurance_Banner.jpg) no-repeat center;
+    background: url(../../src/images/insurance_Banner.jpg) no-repeat center;
     background-size: auto;
     background-size: cover !important;
     color: #fff;
@@ -815,7 +815,7 @@ background:#d9ecff;
 .menuLinks ul li a {
     color: #564e56;
     display: block;
-    background: url(../images/pluse_icon.png) no-repeat 0 6px;
+    background: url(../../src/images/pluse_icon.png) no-repeat 0 6px;
     padding-left:20px;
     font-weight: bold;
     font-size: 15px;
@@ -825,7 +825,7 @@ background:#d9ecff;
 ---------------------------------------------------------------------------------------*/
 
 #main-banner {
-    background-image: url(../images/artificial-intelligence.jpg);
+    background-image: url(../../src/images/artificial-intelligence.jpg);
     background-position: top;
 }
 
@@ -859,10 +859,10 @@ background:#d9ecff;
 ---------------------------------------------------------------------------------------*/
 
 #inner-banner {
-    background-image: url(../images/canarywharfblue1.jpg);
+    background-image: url(../../src/images/canarywharfblue1.jpg);
 }
 #inner-about {
-    background-image: url(../images/about-banner.jpg);
+    background-image: url(../../src/images/about-banner.jpg);
 }
 
 .caption-content3 {
@@ -909,9 +909,9 @@ background:#d9ecff;
     Particles Effect
 ---------------------------------------------------------------------------------------*/
 
-#particles {
-    background-image: url(../images/banner-5.jpg);
-}
+/* #particles {
+    background-image: url(../../src/images/banner-5.jpg);
+} */
 
 #particles .caption-content {
     position: absolute;
@@ -929,19 +929,19 @@ background:#d9ecff;
     Animated Headline
 ---------------------------------------------------------------------------------------*/
 
-#animated-headline {
+/* #animated-headline {
     background-image: url(images/banner-5.jpg);
-}
+} */
 
 
 /*-------------------------------------------------------------------------------------
     Ripple Effect
 ---------------------------------------------------------------------------------------*/
 
-#ripple-bg {
+/* #ripple-bg {
     background-image: url(images/banner-6.jpg);
     background-position: top
-}
+} */
 
 .ripple {
     background-color: rgba(0, 0, 0, 0.8);
@@ -959,7 +959,7 @@ background:#d9ecff;
 #banner .owl-next {
     width: 24px;
     height: 45px;
-    background: url(../images/ban_next_arrow.png);
+    background: url(../../src/images/ban_next_arrow.png);
     position: absolute;
     right: 30px;
     top: 50%;
@@ -970,7 +970,7 @@ background:#d9ecff;
 }
 
 .banner2 .textBg {
-   /* background: url(../images/banner2_bg.png) no-repeat left bottom; */
+   /* background: url(../../src/images/banner2_bg.png) no-repeat left bottom; */
     width: 800px;
     height: 100%;
     position: absolute;
@@ -982,7 +982,7 @@ background:#d9ecff;
 #banner .owl-prev {
     width: 24px;
     height: 45px;
-    background: url(../images/ban_prev_arrow.png);
+    background: url(../../src/images/ban_prev_arrow.png);
     position: absolute;
     left: 30px;
     top: 50%;
@@ -1053,7 +1053,7 @@ a.readMoreBtn2:hover{
     Application module
 ---------------------------------------------------------------------------------------*/
 .aboutBg{
-	background: #fff url(../images/home_top_bg.jpg) no-repeat center bottom;
+	background: #fff url(../../src/images/home_top_bg.jpg) no-repeat center bottom;
     background-size: auto;
 background-size: cover;
 padding: 30px 0 0 0;
@@ -1075,11 +1075,11 @@ text-align: center;
     Parallax Background
 ---------------------------------------------------------------------------------------*/
 
-#parallax {
+/* #parallax {
     background-image: url(images/banner-3.jpg);
     background-attachment: fixed;
     background-position: top
-}
+} */
 
 /*-------------------------------------------------------------------------------------
     Video Background
@@ -1388,7 +1388,7 @@ padding: 20px 15px 10px;
 	overflow:hidden;
 }
 
-.industryBg {background:url(../images/industry_bg.jpg) no-repeat center top; background-size:cover; position:absolute; left:0; top:0; width:100%; height:100%; transition:all 0.3s ease; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -o-transition:all 0.3s ease; -moz-transition:all 0.3s ease;}
+.industryBg {background:url(../../src/images/industry_bg.jpg) no-repeat center top; background-size:cover; position:absolute; left:0; top:0; width:100%; height:100%; transition:all 0.3s ease; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -o-transition:all 0.3s ease; -moz-transition:all 0.3s ease;}
 
 .clearfix::before, .clearfix::after {
     content: '';
@@ -1443,11 +1443,11 @@ padding: 20px 15px 10px;
     text-align: center;
     position: relative;
 }
-.solutiosBg {background:url(../images/solution_bg.jpg) no-repeat center top; background-size:cover; position:absolute; left:0; top:0; width:100%; height:100%; transition:all 0.3s ease; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -o-transition:all 0.3s ease; -moz-transition:all 0.3s ease;}
+.solutiosBg {background:url(../../src/images/solution_bg.jpg) no-repeat center top; background-size:cover; position:absolute; left:0; top:0; width:100%; height:100%; transition:all 0.3s ease; -ms-transition:all 0.3s ease; -webkit-transition:all 0.3s ease; -o-transition:all 0.3s ease; -moz-transition:all 0.3s ease;}
 .solutionBox:hover .solutiosBg {transform:scale(1.2); -moz-transform:scale(1.2); -webkit-transform:scale(1.2); -o-transform:scale(1.2); -ms-transform:scale(1.2);}
 
 .projectStat2 {
-    background:url(../images/face-recognition-bg.jpg) no-repeat left;
+    background:url(../../src/images/face-recognition-bg.jpg) no-repeat left;
     text-align: left;
 }
 
@@ -1827,11 +1827,7 @@ background-color: #ddd;
     Call To Action
 ---------------------------------------------------------------------------------------*/
 
-#contact-now {
-    background-image: url(../images/count-area-bg.jpg);
-    background-attachment: fixed;
-    padding: 80px 0 80px
-}
+
 #contact-now  .overlay{
     opacity: 0.7;
     background: #000;
@@ -2049,7 +2045,7 @@ background-color: #ddd;
 
 #counter {
     padding: 80px 0 50px;
-    background-image: url(../images/counter-bg.jpg);
+    background-image: url(../../src/images/counter-bg.jpg);
     background-position: top;
     background-attachment: fixed
 }
